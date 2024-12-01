@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Store</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <h1 class="header__title">
+        PRODUCT STORE <i class="bx bxs-shopping-bag"></i>
+      </h1>
+      <div class="header__btn-container">
+        <i class="bx bxs-plus-square header__add-btn"></i>
+        <i class="bx bx-sun header__light-mode"></i>
+      </div>
+    </header>
+
+    <!-- Create product section -->
+    <section class="create-product hidden">
+      <input
+        class="create-product__name"
+        type="text"
+        placeholder="Enter your product name"
+      />
+      <input
+        class="create-product__img"
+        type="text"
+        placeholder="Enter your product image"
+      />
+      <input
+        class="create-product__price"
+        type="text"
+        placeholder="Enter your product price"
+      />
+      <button class="create-product__btn">Add Product</button>
+    </section>
+
+    <!-- Edit product section -->
+    <section class="edit-product hidden">
+      <input
+        class="edit-product__name"
+        type="text"
+        placeholder="Enter your new product name"
+      />
+      <input
+        class="edit-product__img"
+        type="text"
+        placeholder="Enter your new product image"
+      />
+      <input
+        class="edit-product__price"
+        type="text"
+        placeholder="Enter your new product price"
+      />
+      <button class="edit-product__btn">Save</button>
+    </section>
+
+    <!-- Main section -->
+    <main class="main">
+      <h2 class="main__title">
+        Current Products <i class="bx bxs-rocket"></i>
+      </h2>
+
+      <!-- No product section Text -->
+      <h4 class="main__no-product hidden">
+        No product is here to be shown.
+        <span class="main__no-product__create"> Create one now!</span>
+      </h4>
+
+      <!-- Product section -->
+      <section class="main__product-gallary">
+        <!-- <div class="main__product">
+          <img
+            src="https://static.independent.co.uk/2023/11/27/06/Apple%20AirPods%20Pro%2C%202nd%20generation%20wireless%20earbuds.png"
+            alt=""
+            class="main__product-img"
+          />
+
+          <div class="main__product-content">
+            <h3 class="main__product-name">Wireless Earbuds</h3>
+            <h4 class="main__product-price">$199.99</h4>
+            <div class="main__product__btn-container">
+              <i class="bx bxs-trash-alt main__product__delete"></i>
+              <i class="bx bxs-edit main__product__edit"></i>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </main>
+  </body>
+  <script src="script/app.js"></script>
+</html>
