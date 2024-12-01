@@ -82,4 +82,3 @@ product-management-app/
 ## Contributing
 
 Feel free to fork the repository and submit pull requests. All contributions are welcome!
-```
